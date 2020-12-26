@@ -6,6 +6,6 @@ ENV MYSQL_DATABASE=customer
 ENV MYSQL_USER=unisannio
 ENV MYSQL_PASSWORD=unisannio
 
-RUN rm -fr /var/lib/mysql
+RUN rm -r /var/lib/mysql
 
 EXPOSE 3306
