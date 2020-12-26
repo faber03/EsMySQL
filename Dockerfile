@@ -6,6 +6,6 @@ ENV MYSQL_DATABASE=customer
 ENV MYSQL_USER=unisannio
 ENV MYSQL_PASSWORD=unisannio
 
-RUN usermod -u 1000 mysql
+USER 1000:50
 
 EXPOSE 3306
