@@ -6,9 +6,9 @@ ENV MYSQL_DATABASE=customer
 ENV MYSQL_USER=unisannio
 ENV MYSQL_PASSWORD=unisannio
 
+#USER mysql
+
 EXPOSE 3306
 
-USER mysql
-
-ENTRYPOINT mysqld --initialize --user=mysql && mysqld --skip-symbolic-links
+#ENTRYPOINT mysqld --initialize --user=mysql && mysqld --skip-symbolic-links
 
