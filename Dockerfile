@@ -6,6 +6,4 @@ ENV MYSQL_DATABASE=customer
 ENV MYSQL_USER=unisannio
 ENV MYSQL_PASSWORD=unisannio
 
-RUN chown 999:999 ./db/data
-
 EXPOSE 3306
