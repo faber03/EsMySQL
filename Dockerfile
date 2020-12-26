@@ -1,4 +1,4 @@
-FROM mysql:5.6
+FROM registry.redhat.io/rhscl/mysql-56-rhel7
 
 # ENV MYSQL_ROOT_PASSWORD DEFAULT_PASS
 ENV MYSQL_ALLOW_EMPTY_PASSWORD=true
