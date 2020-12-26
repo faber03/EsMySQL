@@ -7,7 +7,7 @@ FROM mysql:8.0.20
 #ENV MYSQL_PASSWORD=unisannio
 #ENV MYSQL_ROOT_PASSWORD=unisannio 
 
-#RUN chown -R mysql /var/lib/mysql
+RUN chown -R 1000:50 /var/lib/mysql
 #RUN chgrp -R mysql /var/lib/mysql
 
 EXPOSE 3306
