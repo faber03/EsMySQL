@@ -6,6 +6,9 @@ ENV MYSQL_DATABASE=customer
 ENV MYSQL_USER=unisannio
 ENV MYSQL_PASSWORD=unisannio
 
-USER 1000:50
-
 EXPOSE 3306
+
+USER mysql
+
+ENTRYPOINT mysqld --initialize --user=mysql && mysqld --skip-mysqlx --default-authentication-plugin=mysql_native_password
+
