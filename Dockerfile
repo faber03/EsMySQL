@@ -1,13 +1,9 @@
-FROM registry.redhat.io/rhscl/mysql-56-rhel7
+FROM mysql:8.0.20
 
 # ENV MYSQL_ROOT_PASSWORD DEFAULT_PASS
 ENV MYSQL_ALLOW_EMPTY_PASSWORD=true
-ENV MYSQL_DATABASE=bank
-ENV MYSQL_USER=administrator
-ENV MYSQL_PASSWORD=administrator
-ENV MYSQL_ROOT_PASSWORD=administrator 
-
-#RUN chown -R 1000:50 /var/lib/mysql
-#RUN chgrp -R mysql /var/lib/mysql
+ENV MYSQL_DATABASE=customer
+ENV MYSQL_USER=unisannio
+ENV MYSQL_PASSWORD=unisannio
 
 EXPOSE 3306
