@@ -10,5 +10,5 @@ EXPOSE 3306
 
 USER mysql
 
-ENTRYPOINT mysqld --initialize --user=mysql && mysqld --skip-mysqlx --default-authentication-plugin=mysql_native_password
+ENTRYPOINT mysqld --initialize --user=mysql && mysqld --skip-symbolic-links
 
