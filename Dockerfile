@@ -3,9 +3,9 @@ FROM mysql:5.6
 # ENV MYSQL_ROOT_PASSWORD DEFAULT_PASS
 ENV MYSQL_ALLOW_EMPTY_PASSWORD=true
 ENV MYSQL_DATABASE=bank
-ENV MYSQL_USER=unisannio
-ENV MYSQL_PASSWORD=unisannio
-ENV MYSQL_ROOT_PASSWORD=unisannio 
+ENV MYSQL_USER=administrator
+ENV MYSQL_PASSWORD=administrator
+ENV MYSQL_ROOT_PASSWORD=administrator 
 
 #RUN chown -R 1000:50 /var/lib/mysql
 #RUN chgrp -R mysql /var/lib/mysql
